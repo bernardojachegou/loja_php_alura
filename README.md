@@ -27,6 +27,8 @@ O curso teve como objetivo demonstrar os fundamentos para a criação de um sist
 
 3 - Acesse o MySQL atravès do usuário padrão e crie o banco de dados com as seguintes informações:
 
+CREATE DATABASE loja;
+
 CREATE TABLE usuarios (id integer auto_increment primary key, email varchar(255), senha varchar(255));
 
 CREATE TABLE produtos (id integer auto_increment primary key, nome varchar(255), preco decimal(10,2), descricao text, categoria_id integer, usado boolean default false);
